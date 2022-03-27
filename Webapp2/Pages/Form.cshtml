@@ -1,0 +1,85 @@
+@page
+@model FormModel
+
+
+<h2><center>Faculty Course Assessment Report</center></h2>
+<h2><center>Computer Information & Decision Management Department</center></h2>
+
+<table>
+    <tr>
+        <th><h5 style="text-align:right;">Course:</h5></th>
+        <th><form><input type="text" id="course" name="course"></form></th>
+    </tr>
+    <tr>
+        <th><h5 style="text-align:right;">Semester:</h5></th>
+        <th><form><input type="text" id="semester" name="semester"></form></th>
+    </tr>
+    <tr>
+        <th><h5 style="text-align:right;">Year:</h5></th>
+        <th><form><input type="text" id="year" name="year"></form></th>
+    </tr>
+    <tr>
+        <th><h5 style="text-align:right;">Instructor:</h5></th>
+        <th><form><input type="text" id="instructor" name="instructor"></form></th>
+    </tr>
+</table><br>
+
+<h3>1. Course Coordinator:</h3>
+<form>
+    <input type="text" id="courseCoordinator" name="courseCoordinator"><br>
+</form><br>
+<h3>2. Catalog Description:</h3>
+<form>
+    <input type="text" id="catalogDescription" name="catalogDescription" style="width:500px; height:75px;"><br>
+</form><br>
+<h3>3. Grade Distribution</h3>
+<table>
+    <tr>
+        <th></th>
+        <th><p><center>A</center></p></th>
+        <th><p><center>B</center></p></th>
+        <th><p><center>C</center></p></th>
+        <th><p><center>D</center></p></th>
+        <th><p><center>F</center></p></th>
+        <th><p><center>X</center></p></th>
+        <th><p><center>Total</center></p></th>
+    </tr>
+    <tr>
+        <th><p>Entire Class</p></th>
+        <th><input type="number" id="entireA" name="entireA" style="width:40px" min="0"></th>
+        <th><input type="number" id="entireB" name="entireB" style="width:40px" min="0"></th>
+        <th><input type="number" id="entireC" name="entireC" style="width:40px" min="0"></th>
+        <th><input type="number" id="entireD" name="entireD" style="width:40px" min="0"></th>
+        <th><input type="number" id="entireF" name="entireF" style="width:40px" min="0"></th>
+        <th><input type="number" id="entireX" name="entireX" style="width:40px" min="0"></th>
+        <th><input type="number" id="entireTotal" name="entireTotal" style="width:40px" min="0"></th>
+    </tr>
+    <tr>
+        <th><p>CIDM Majors only</p></th>
+        <th><input type="number" id="cidmA" name="cidmA" style="width:40px" min="0"></th>
+        <th><input type="number" id="cidmB" name="cidmB" style="width:40px" min="0"></th>
+        <th><input type="number" id="cidmC" name="cidmC" style="width:40px" min="0"></th>
+        <th><input type="number" id="cidmD" name="cidmD" style="width:40px" min="0"></th>
+        <th><input type="number" id="cidmF" name="cidmF" style="width:40px" min="0"></th>
+        <th><input type="number" id="cidmX" name="cidmX" style="width:40px" min="0"></th>
+        <th><input type="number" id="cidmTotal" name="cidmTotal" style="width:40px" min="0"></th>
+    </tr>
+</table><br>
+<h3>4. Modifications Made to the Course:</h3>
+<form>
+    <input type="text" id="modifications" name="modifications" style="width:500px; height:75px;"><br>
+</form><br>
+<h3>5. Student Feedback</h3>
+<form>
+    <input type="text" id="studentFeedback" name="studentFeedback" style="width:500px; height:75px;"><br>
+</form><br>
+<h3>6. Reflection</h3>
+<form>
+    <input type="text" id="reflection" name="reflection" style="width:500px; height:75px;"><br>
+</form><br>
+<h3>7. Proposed Actions for Course Improvement</h3>
+<form>
+    <input type="text" id="proposedImprovement" name="proposedImprovement" style="width:500px; height:75px;"><br><br>
+
+    <input type="submit" value="Submit">
+</form>
